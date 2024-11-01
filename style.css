@@ -5,6 +5,276 @@ body{
 	box-sizing: border-box;
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
+
+header {
+	position: relative; 
+	text-align: center;
+	height: 400px;
+	padding: 50px 20px;
+	color: white;
+	align-content: center;
+	overflow: hidden; 
+}
+header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('./11.jpg');
+	background-size: cover;
+	filter: blur(2px); 
+	z-index: -1; 
+}
+header h1, header h2, header p {
+	position: relative;
+	z-index: 1;
+}
+header h1 {
+	font-size: 48px;
+	margin: 0;
+	display: inline-block;
+}
+header h1::before,
+header h1::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	width: 50px;
+	height: 2px;
+	background-color: white;
+}
+header h1::before {
+	left: -60px;
+}
+header h1::after {
+	right: -60px;
+}
+header h2 {
+	font-size: 36px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+header p {
+	font-size: 16px;
+	margin: 20px 0;
+}
+
+/*features*/
+.features {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #f9f9f9;
+}
+.features h2 {
+	font-size: 32px;
+	margin: 0;
+}
+.features p {
+	font-size: 16px;
+	color: #777;
+	margin: 20px 0;
+}
+.feature-list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+.feature-item {
+	width: 200px;
+	margin: 20px;
+	text-align: center;
+}
+.feature-item i {
+	font-size: 40px;
+	color: #2abf9e;
+	margin-bottom: 10px;
+}
+.feature-item h3 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.feature-item p {
+	font-size: 14px;
+	color: #777;
+}
+.bg {
+
+
+background:linear-gradient(rgba(0,0,150,0.5),rgba(0,0,50,0.5)),url('./12.jpg');
+height: auto; /* Allow the height to adjust based on content */
+
+background-position: center;
+
+background-repeat: no-repeat;
+
+background-size: cover;
+
+position: relative;
+
+padding: 50px 20px; /* Add some padding for the form */
+
+overflow: hidden; /* Prevent overflow */
+
+background-attachment: fixed; /* Fix the background image */
+
+}
+.bg::after {
+
+content: "";
+
+position: absolute;
+
+top: 0;
+
+left: 0;
+
+width: 100%;
+
+height: 100%;
+
+background: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+
+z-index: 0; /* Position the overlay below the text */
+
+}
+.contact-title{
+	margin-top: ;
+}
+.container {
+	position: relative; /* Changed to relative for proper stacking */
+	z-index: 1; /* Bring the container above the background */
+	width: 80%;
+	text-align: center;
+	margin: auto; /* Center the container */
+}
+h1 {
+	font-size: 48px;
+	margin-bottom:  40px;
+}
+.form-group {
+	margin-bottom: 20px;
+	position: relative;
+}
+.form-group input, .form-group textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid white;
+	background: transparent;
+	color: white;
+	font-size: 18px;
+}
+.form-group label {
+	position: absolute;
+	top: -20px;
+	left: 10px;
+	font-size: 18px;
+}
+.form-group .error {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	transform: translateY(-50%);
+	font-size: 14px;
+	color:  rgba(255, 0, 0, 0.7);
+   
+	padding: 2px 5px;
+}
+.btn { 
+	background-color:  rgba(52, 40, 143, 0.7);
+	color: white;
+	padding: 15px 30px;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+}
+.btn:hover {
+	background-color: #0b72f0;
+}
+.sectcontainer {
+	max-width: 1200px;
+  
+	display: flex;
+	flex-wrap: wrap;
+}
+.sectcontainer {
+padding-top: 60px;
+padding-right: 20px;
+margin-right: 0px;
+margin-left: 52px;
+margin-bottom: 46px;
+}
+
+.text-section {
+	flex: 1;
+	min-width: 300px;
+	margin-right: 20px;
+	align-content: center;
+}
+.text-section h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin: 0;
+	color: #249be5;
+}
+.text-section p {
+	font-size: 18px;
+	color: #666;
+}
+.button {
+	display: inline-block;
+	padding: 10px 20px;
+	margin-top: 20px;
+	border: 2px solid #333;
+	color: #249be5;
+	text-decoration: none;
+	font-size: 16px;
+}
+.images-section {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.chat {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px 20px;
+	border-radius: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.chat i {
+	font-size: 24px;
+	color: #25D366;
+	margin-left: 10px;
+}
+footer {
+	background-color: #757070;
+	padding: 20px 0;
+	text-align: center;
+}
+footer a {
+	color: #00cc99;
+	text-decoration: none;
+	margin: 0 10px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+footer p {
+	margin: 10px 0 0;
+	font-size: 14px;
+	color: #ccc;
+}
+
+
 a:link,a:active,a:visited,a:hover{
 	color:#3f51b5;
 }
@@ -17,6 +287,35 @@ a:link,a:active,a:visited,a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+	flex-direction: column;
+}
+.reviewtexr {
+
+    text-align: center; /* Center the text */
+
+	margin-bottom: -52px;
+}
+.reviewtexr {
+    text-align: center; /* Center the text */
+    margin-bottom: -62px; /* Space between the heading and the reviews */
+    font-style: italic; /* Make the text italic */
+    font-size: 1rem; /* Increase the font size */
+    color: #249be5; /* Change the text color */
+    position: relative; /* For positioning pseudo-elements */
+}
+
+
+.reviewtexr h1 {
+    position: relative; /* Position relative for pseudo-element */
+}
+
+.reviewtexr h1::after {
+    content: '';
+    display: block;
+    width: 50%; /* Adjust the width of the underline */
+    height: 4px; /* Adjust the height of the underline */
+    background: #00cc99; /* Color of the underline */
+    margin: 10px auto; /* Center the underline */
 }
 .innerdiv
 {
@@ -182,3 +481,4 @@ a:link,a:active,a:visited,a:hover{
 		position: relative;
 	}
 }
+
