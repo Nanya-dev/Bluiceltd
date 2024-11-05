@@ -153,28 +153,18 @@
       </div>
      </div>
     <!--Contact Us section -->
-    <div class="bg">
+ <div class="bg">
         <div class="container">
+            <form action="https://api.web3forms.com/submit" method="POST">
             <div class="contact-title" style="color: white;">
                <h1>Contact us</h1>
                <h2>We are always ready to serve you!</h2>
             
             </div>
-            <div class="form-group">
-                <label for="name" style="color: white;">Name:</label>
-                <input type="text" id="name" name="name">
-                <span class="error">The text field is required.</span>
-            </div>
-            <div class="form-group">
-                <label for="email" style="color: white;">E-Mail:</label>
-                <input type="email" id="email" name="email">
-                <span class="error">The email is not a valid email.</span>
-            </div>
-            <div class="form-group">
-                <label for="message" style="color: white;">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-                <span class="error">The text field is required.</span>
-            </div>
+            <input type="hidden" name="access_key" value="fbc2a282-e7ce-46b4-bbad-bd14e7b68867">
+            <input type="text" name="name" placeholder="Your Name">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message"placeholder="Your Message" required></textarea>
             <button class="button">Send Message</button>
         </div>
     </div>
